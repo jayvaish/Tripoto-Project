@@ -1,12 +1,927 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>ajay</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Tripoto: Share and Discover Travel Stories, Community, Tourism Guide
+    </title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      href="https://cdn1.tripoto.com/assets/2.9/img/favicon.ico"
+    />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/forindex.css" />
+
+    <style>
+      .tooltip-popup > a {
+        text-decoration: none;
+        color: black;
+      }
+      #Litleanchortag {
+        text-decoration: none;
+        color: white;
+      }
+      .anchors {
+        margin-top: 30px;
+      }
+      #footter {
+        margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ----------Navbar----Nidi-------------------------- -->
+    <div id="">
+      <!-- <div id="background-img">
+        <div class="nav">
+          <div class="nav1">
+            <a class="logo" href="./index.html">
+              <img
+                src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg"
+                alt=""
+              />
+            </a>
+            <div id="Inputboxchnage">
+              <input
+                type="text"
+                placeholder="Search for intineraries, destination, hotels or activites"
+              />
+            </div>
+          </div>
+
+          <div class="nav2">
+            <span class="tooltip">
+              <p>Inspiration <i class="fa-solid fa-caret-down"></i></p>
+
+              <div class="tooltip-popup">
+                <a href="./visit_dubai.html"><p>Visit Dubai</p></a>
+                <a href="./Beaches/beaches.html"> <p>Beaches</p></a>
+                <a href="./packages.html"> <p>Packages</p></a>
+                <a href="./MindfulRetreats.html"><p>Mindful Rest</p></a>
+                <a href="./tripotoFamily.html"><p>Family</p></a>
+                <a href="./explore.html"><p>Explore More</p></a>
+              </div>
+            </span>
+
+            <span>
+              <p>Forum</p>
+            </span>
+
+            <span>
+                <a id ="Litleanchortag" href="./packages.html"> <p>Packages</p></a>
+            </span>
+
+            <span class="tooltip">
+              <p>Publish Trip <i class="fa-solid fa-caret-down"></i></p>
+
+              <div class="tooltip-popup">
+                <p>Create New</p>
+              </div>
+            </span>
+
+           
+            <span>
+              <p>Sign in</p>
+            </span>
+          </div>
+        </div>
+        <h1>India's Largest Community of Travellers</h1>
+      </div> -->
+      <!-- ---------------------------------working----navbar---------------------------------------------- -->
+      <div id="header">
+        <nav id="nav">
+          <div>
+            <a href="./index.html">
+              <img
+                id="headingimg"
+                src="https://cdn1.tripoto.com/assets/2.9/img/logo/tripoto.svg"
+            /></a>
+          </div>
+          <div id="navsearch" style="display: none">
+            <input
+              id="newinput"
+              type="text"
+              value=""
+              placeholder="Search for itineraise, destination, hotels or activities"
+              value="hii"
+            />
+            <a href="#">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <div id="link">
+            <span class="tooltip">
+              <a href="#"
+                ><p>Inspiration <i class="fa-solid fa-caret-down"></i></p
+              ></a>
+              <div class="tooltip-popup">
+                <a href="./visit_dubai.html"><p>Visit Dubai</p></a>
+                <a href="./Beaches/beaches.html"> <p>Beaches</p></a>
+                <a href="./packages.html"> <p>Packages</p></a>
+                <a href="./MindfulRetreats.html"><p>Mindful Rest</p></a>
+                <a href="./tripotoFamily.html"><p>Family</p></a>
+                <a href="./explore.html"><p>Explore More</p></a>
+              </div>
+            </span>
+            <a href="#"><p>Forum &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></a>
+            <a id="Litleanchortag" href="./packages.html"> <p>Packages</p></a>
+            <span class="tooltip">
+             <p href="" id="Litleanchortag1">&nbsp;&nbsp;&nbsp; Publish Trip <i class="fa-solid fa-caret-down"></i></p>
+              <div class="tooltip-popup">
+                <p>Create New</p>
+              </div>
+            </span>
+            <a href="#" id="remove"><p>Sign in</p></a>
+          </div>
+        </nav>
+        <div id="login">
+          <div id="close">
+            <img src="https://logodix.com/logo/1077363.png" />
+          </div>
+          <div id="facebook">
+            <div id="fbimage">
+              <img
+                src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-128.png"
+              />
+            </div>
+            <div id="text">Log in with Facebook</div>
+          </div>
+          <div id="google">
+            <div id="fbimage">
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/google-152-189813.png"
+              />
+            </div>
+            <div id="text">Log in with Google</div>
+          </div>
+          <p style="text-align: center">OR</p>
+          <input type="text" id="email" placeholder="EMAIL" />
+          <input type="password" id="password" placeholder="PASSWORD" />
+          <div id="remember">
+            <input style="margin-top: 5px" type="checkbox" />
+            <label>Remember me</label>
+            <a href="#" style="color: blue; float: right; margin-top: 5px"
+              >Forgot Password</a
+            >
+          </div>
+          <input
+            style="color: white; font-weight: bolder"
+            type="button"
+            value="LOG IN"
+            id="button"
+          />
+          <div id="signup">
+            <p style="text-align: center">
+              Don't have an account?
+              <a href="#" style="color: blue" id="loginsignup">Sign Up</a>
+            </p>
+          </div>
+        </div>
+        <h1 id="global">The Global Community of Travellers</h1>
+        <div id="search">
+          <input
+            id="input"
+            type="text"
+            placeholder="Search for itineraise, destination, hotels or activities"
+          />
+          <a href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+        <div
+          id="parents"
+          style="margin-top: 5px; position: absolute; top: 250px; left: 340px"
+        ></div>
+      </div>
+      <div id="signin">
+        <div id="close">
+          <img src="https://logodix.com/logo/1077363.png" />
+        </div>
+        <div id="facebook">
+          <div id="fbimage">
+            <img
+              src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-128.png"
+            />
+          </div>
+          <div id="text">Log in with Facebook</div>
+        </div>
+        <div id="google">
+          <div id="fbimage">
+            <img
+              src="https://cdn.iconscout.com/icon/free/png-256/google-152-189813.png"
+            />
+          </div>
+          <div id="text">Log in with Google</div>
+        </div>
+        <p style="text-align: center">OR</p>
+        <input type="text" id="name" placeholder="NAME" />
+        <input type="text" id="email1" placeholder="EMAIL" />
+        <input type="password" id="password1" placeholder="PASSWORD" />
+        <select id="options">
+          <option value="">Account Type</option>
+          <option value="Personal">Personal</option>
+          <option value="Business">Business</option>
+          <option value="Blogger">Blogger</option>
+          <option value="Indipent Guide">Indipent Guide</option>
+        </select>
+        <input style="margin-top: 10px; margin-left: 20px" type="checkbox" />
+        <label>Subscribe to the newsletter</label>
+        <div id="robot">
+          <div id="checkbox"></div>
+          <label style="margin-left: 10px; line-height: 50px"
+            >I'm not a robot</label
+          >
+          <div id="captcha">
+            <img style="width: 100%; height: 100%" src="captcha.PNG" />
+          </div>
+        </div>
+        <input
+          style="color: white; font-weight: bolder"
+          type="button"
+          value="SIGN UP"
+          id="button1"
+        />
+        <p style="text-align: center">
+          <span style="color: blue; cursor: pointer"
+            >By signing up, you agree to Tripoto's</span
+          >terms and conditions and privacy policy.
+        </p>
+        <p style="text-align: center">
+          Already registered?
+          <span>
+            <a style="color: blue" href="#" id="loginAgain">Log in</a>
+          </span>
+        </p>
+      </div>
+      <!-- header -->
+
+      <!-- header -->
+    </div>
+    <div id="mainDevCont">
+    <div class="anchors">
+      <div>
+        <a href="./MindfulRetreats.html"
+          ><img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192329_aa.png"
+            alt=""
+        /></a>
+      </div>
+      <div>
+        <a href="./onlineExpe.html"
+          ><img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192307_cc.png"
+            alt=""
+        /></a>
+      </div>
+      <div>
+        <a href="./tripotoFamily.html"
+          ><img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192273_bb.png"
+            alt=""
+        /></a>
+      </div>
+      <div>
+        <a href="./Hindi.html"
+          ><img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192344_dd.png"
+            alt=""
+        /></a>
+      </div>
+    </div>
+    <h1>In the Spotlight : Partnership</h1>
+    <div class="anchors">
+      <button class="np" id="prev"><</button>
+      <div id="divs">
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660817736_078_commonarea_07_min.jpg"
+            alt=""
+          />
+          <h4>GOSTOPS</h4>
+          <h5>
+            Experience The Best Of Monsoon With These Trendy GoSTOPS Stays Under
+            Rs 2,000
+          </h5>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1659608221_d0f7de4a_b1d9_40e0_bba0_d0527a824e78.jpg"
+            alt=""
+          />
+          <h4>GOSTOPS</h4>
+          <h5>
+            Experience The Best Of Monsoon With These Trendy Go STOPS Stays Under
+            Rs 2,000
+          </h5>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660808085_shutterstock_1611239635_min.jpg"
+            alt=""
+          />
+          <h4>GOSTOPS</h4>
+          <h5>
+            Experience The Best Of Monsoon With These Trendy GoSTOPS Stays Under
+            Rs 2,000
+          </h5>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1660310642_j_1.jpg"
+            alt=""
+          />
+          <h4>GOSTOPS</h4>
+          <h5>
+            Experience The Best Of Monsoon With These Trendy GoSTOPS Stays Under
+            Rs 2,000
+          </h5>
+        </div>
+      </div>
+      <button class="np" id="next">></button>
+    </div>
+    <div id="dis">
+      <a href=""
+        ><img
+          src="https://cdn1.tripoto.com/media/transfer/img/2224454/Image/1656479622_header_web2.gif"
+          alt=""
+      /></a>
+    </div>
+    <h1>Find Best Places to Visit in India August & September</h1>
+    <div class="anchors">
+      <button class="np" id="prev1"><</button>
+      <div id="divs1">
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658862164_1455274435_udaipur3_jpg.jpg"
+            alt=""
+          />
+          <h4>Tripoto's Destination Of The Month: Udaipur</h4>
+          <p>By <a href="">Tripoto</a></p>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1659027857_1658481747_depositphotos_95512066_stock_illustration_incredible_india_background.jpeg"
+            alt=""
+          />
+          <h4>Tripoto's Destination Of The Month: Udaipur</h4>
+          <p>By <a href="">Tripoto</a></p>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658862269_1467796889_1467796887893_5_2.jpg"
+            alt=""
+          />
+          <h4>Tripoto's Destination Of The Month: Udaipur</h4>
+          <p>By <a href="">Tripoto</a></p>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658863582_1657213046_satyan_chawla_pti5yh3a4l8_unsplash.jpg"
+            alt=""
+          />
+          <h4>Tripoto's Destination Of The Month: Udaipur</h4>
+          <p>By <a href="">Tripoto</a></p>
+        </div>
+      </div>
+      <button class="np" id="next1">></button>
+    </div>
+    <h1>Plan International Trips for August & September</h1>
+    <div class="anchors">
+      <button class="np" id="prev2"><</button>
+      <div id="divs2">
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658864126_1657780099_cover1.jpg"
+            alt=""
+          />
+          <h4>Tripoto's Destination Of The Month: Udaipur</h4>
+          <p>By <a href="">Tripoto</a></p>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658863969_1493707507_15798144758_5a93457ae4_o.jpg"
+            alt=""
+          />
+          <h4>Tripoto's Destination Of The Month: Udaipur</h4>
+          <p>By <a href="">Tripoto</a></p>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1653585757_1648645960_5.jpg"
+            alt=""
+          />
+          <h4>Tripoto's Destination Of The Month: Udaipur</h4>
+          <p>By <a href="">Tripoto</a></p>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1651046452_1545558276_erdap_2129568_1280.jpg"
+            alt=""
+          />
+          <h4>Tripoto's Destination Of The Month: Udaipur</h4>
+          <p>By <a href="">Tripoto</a></p>
+        </div>
+      </div>
+      <button class="np" id="next2">></button>
+    </div>
+    <h1>Check Out Best Hotels and Properties for Every Type Of Traveller</h1>
+    <div class="anchors">
+      <button class="np" id="prev3"><</button>
+      <div id="divs3">
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658864670_1511440192_ononono.jpg"
+            alt=""
+          />
+          <p class="orange">BUDGET STAYS</p>
+          <h4>Tripoto's Destination Of The Month: Udaipur</h4>
+          <p>By <a href="">Tripoto</a></p>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658865127_1542805937_gc13_min.png"
+            alt=""
+          />
+          <p class="orange">BUDGET STAYS</p>
+          <h4>Tripoto's Destination Of The Month: Udaipur</h4>
+          <p>By <a href="">Tripoto</a></p>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1656332499_1656096038_manalsu_2.jpg"
+            alt=""
+          />
+          <p class="orange">BUDGET STAYS</p>
+          <h4>Tripoto's Destination Of The Month: Udaipur</h4>
+          <p>By <a href="">Tripoto</a></p>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658864962_1658078162_untitled_design_4.jpg"
+            alt=""
+          />
+          <p class="orange">BUDGET STAYS</p>
+          <h4>Tripoto's Destination Of The Month: Udaipur</h4>
+          <p>By <a href="">Tripoto</a></p>
+        </div>
+      </div>
+      <button class="np" id="next3">></button>
+    </div>
+    <h1>Travel and Learn with Tripoto's Mindful Retreats</h1>
+    <div class="anchors">
+      <button class="np" id="prev4"><</button>
+      <div id="divs4">
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1661485352_id_3570.jpg"
+            alt=""
+          />
+          <p class="teal">PACKAGE</p>
+          <h4>
+            Soak In The Vibes Of Authentic Himachali Traditions In This Village
+            Retreat | A Kasauli Ggaon
+          </h4>
+          <div class="tags">
+            <div id="location">
+              <h5>Himachal Pradesh</h5>
+            </div>
+            <div id="stay">3D-2N</div>
+          </div>
+          <div id="book">
+            <div id="price">
+              &#x20B9;8900
+              <div id="person">/person</div>
+            </div>
+            <button id="book-now">Book Now</button>
+          </div>
+          <hr style="margin-top:20px;color: gray" />
+          <div id="verified">
+            <img
+              src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"
+              alt=""
+            />
+            <p>
+              Tripoto's Mindful Retreates
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvhSUrlDDQlyUJZEUNB_mBXUnY1fIcnMhe-ggvWCWNA&s"
+                alt=""
+              />
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg"
+            alt=""
+          />
+          <p class="teal">PACKAGE</p>
+          <h4>
+            Soak In The Vibes Of Authentic Himachali Traditions In This Village
+            Retreat | A Kasauli Ggaon
+          </h4>
+          <div class="tags">
+            <div id="location">
+              <h5>Himachal Pradesh</h5>
+            </div>
+            <div id="stay">3D-2N</div>
+          </div>
+          <div id="book">
+            <div id="price">
+              &#x20B9;8900
+              <div id="person">/person</div>
+            </div>
+            <button id="book-now">Book Now</button>
+          </div>
+          <hr style="margin-top:20px;color: gray" />
+          <div id="verified">
+            <img
+              src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"
+              alt=""
+            />
+            <p>
+              Tripoto's Mindful Retreates
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvhSUrlDDQlyUJZEUNB_mBXUnY1fIcnMhe-ggvWCWNA&s"
+                alt=""
+              />
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660666126_image_covera.jpg"
+            alt=""
+          />
+          <p class="teal">PACKAGE</p>
+          <h4>
+            Soak In The Vibes Of Authentic Himachali Traditions In This Village
+            Retreat | A Kasauli Ggaon
+          </h4>
+          <div class="tags">
+            <div id="location">
+              <h5>Himachal Pradesh</h5>
+            </div>
+            <div id="stay">3D-2N</div>
+          </div>
+          <div id="book">
+            <div id="price">
+              &#x20B9;8900
+              <div id="person">/person</div>
+            </div>
+            <button id="book-now">Book Now</button>
+          </div>
+          <hr style="margin-top:20px;color: gray" />
+          <div id="verified">
+            <img
+              src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"
+              alt=""
+            />
+            <p>
+              Tripoto's Mindful Retreates
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvhSUrlDDQlyUJZEUNB_mBXUnY1fIcnMhe-ggvWCWNA&s"
+                alt=""
+              />
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658864670_1511440192_ononono.jpg"
+            alt=""
+          />
+          <p class="teal">PACKAGE</p>
+          <h4>
+            Soak In The Vibes Of Authentic Himachali Traditions In This Village
+            Retreat | A Kasauli Ggaon
+          </h4>
+          <div class="tags">
+            <div id="location">
+              <h5>Himachal Pradesh</h5>
+            </div>
+            <div id="stay">3D-2N</div>
+          </div>
+          <div id="book">
+            <div id="price">
+              &#x20B9;8900
+              <div id="person">/person</div>
+            </div>
+            <button id="book-now">Book Now</button>
+          </div>
+          <hr style="margin-top:20px;color: gray" />
+          <div style="margin-top:30px;" id="verified">
+            <img
+              src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"
+              alt=""
+            />
+            <p>
+              Tripoto's Mindful Retreates
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvhSUrlDDQlyUJZEUNB_mBXUnY1fIcnMhe-ggvWCWNA&s"
+                alt=""
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="np" id="next4">></button>
+    </div>
+    <h1>Book Budget Tour Packages Curated For You</h1>
+    <div class="anchors">
+      <button class="np" id="prev4"><</button>
+      <div id="divs4">
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567683210_north_east_web.jpg"
+            alt=""
+          />
+          <p class="teal">PACKAGE</p>
+          <h4>
+            Soak In The Vibes Of Authentic Himachali Traditions In This Village
+            Retreat | A Kasauli Ggaon
+          </h4>
+          <div class="tags">
+            <div id="location">
+              <h5>Himachal Pradesh</h5>
+            </div>
+            <div id="stay">3D-2N</div>
+          </div>
+          <div id="book">
+            <div id="price">
+              &#x20B9;29,000
+              <div id="person">/person</div>
+            </div>
+            <button id="book-now">Get Quotes</button>
+          </div>
+          <hr style="margin-top:20px;color: gray" />
+          <div id="verified">
+            <img
+              src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"
+              alt=""
+            />
+            <p>
+              Tripoto's Mindful Retreates
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvhSUrlDDQlyUJZEUNB_mBXUnY1fIcnMhe-ggvWCWNA&s"
+                alt=""
+              />
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567063251_kashmir_app.jpg"
+            alt=""
+          />
+          <p class="teal">PACKAGE</p>
+          <h4>
+            Soak In The Vibes Of Authentic Himachali Traditions In This Village
+            Retreat | A Kasauli Ggaon
+          </h4>
+          <div class="tags">
+            <div id="location">
+              <h5>Himachal Pradesh</h5>
+            </div>
+            <div id="stay">3D-2N</div>
+          </div>
+          <div id="book">
+            <div id="price">
+              &#x20B9;16,000
+              <div id="person">/person</div>
+            </div>
+            <button id="book-now" class="togoKashmir">Get Quotes</button>
+          </div>
+          <hr style="margin-top:20px;color: gray" />
+          <div id="verified">
+            <img
+              src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"
+              alt=""
+            />
+            <p>
+              Tripoto's Mindful Retreates
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvhSUrlDDQlyUJZEUNB_mBXUnY1fIcnMhe-ggvWCWNA&s"
+                alt=""
+              />
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567083461_dubai_app.jpg"
+            alt=""
+          />
+          <p class="teal">PACKAGE</p>
+          <h4>
+            Soak In The Vibes Of Authentic Himachali Traditions In This Village
+            Retreat | A Kasauli Ggaon
+          </h4>
+          <div class="tags">
+            <div id="location">
+              <h5>Himachal Pradesh</h5>
+            </div>
+            <div id="stay">3D-2N</div>
+          </div>
+          <div id="book">
+            <div id="price">
+              &#x20B9;21,900
+              <div id="person">/person</div>
+            </div>
+            <button id="book-now" class="gotoDubai">Get Quotes</button>
+          </div>
+          <hr style="margin-top:20px;color: gray" />
+          <div id="verified">
+            <img
+              src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"
+              alt=""
+            />
+            <p>
+              Tripoto's Mindful Retreates
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvhSUrlDDQlyUJZEUNB_mBXUnY1fIcnMhe-ggvWCWNA&s"
+                alt=""
+              />
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567494998_andaman_app.jpg"
+            alt=""
+          />
+          <p class="teal">PACKAGE</p>
+          <h4>
+            Soak In The Vibes Of Authentic Himachali Traditions In This Village
+            Retreat | A Kasauli Ggaon
+          </h4>
+          <div class="tags">
+            <div id="location">
+              <h5>Himachal Pradesh</h5>
+            </div>
+            <div id="stay">3D-2N</div>
+          </div>
+          <div id="book">
+            <div id="price">
+              &#x20B9;32,000
+              <div id="person">/person</div>
+            </div>
+            <button id="book-now">Get Quotes</button>
+          </div>
+          <hr style="margin-top:30px;color: gray" />
+          <div id="verified">
+            <img
+              src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg"
+              alt=""
+            />
+            <p>
+              Tripoto's Mindful Retreates
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvhSUrlDDQlyUJZEUNB_mBXUnY1fIcnMhe-ggvWCWNA&s"
+                alt=""
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="np" id="next4">></button>
+    </div>
+  </div>
+    <div id="footter"></div>
+  </body>
 </html>
+<script src="index.js"></script>
+<!-- <script src="./scripts/index.js" type="module"></script> -->
+<!-- <script src="./indexfooter.js" type="module"></script> -->
+<script type="module">
+  import footer from "./component/footerexport.js";
+  document.getElementById("footter").innerHTML = footer();
+</script>
+<script>
+  document.querySelector(".togoKashmir").addEventListener("click", () => {
+    // alert("click")
+    window.location.href = "./Kashmir_pages/kashmir.html";
+  });
+  document.querySelector(".gotoDubai").addEventListener("click", () => {
+    // alert("click")
+    window.location.href = "./visit_dubai.html";
+  });
+</script>
+
+<script>
+  document.getElementById("remove").addEventListener("click", () => {
+    document.getElementById("login").style.display = "block";
+  });
+
+  document.getElementById("close").addEventListener("click", () => {
+    document.getElementById("login").style.display = "none";
+  });
+
+  document.getElementById("checkbox").addEventListener("click", () => {
+    var check = document.getElementById("checkbox");
+    check.innerHTML = "";
+    check.style.border = "none";
+    var img = document.createElement("img");
+    img.setAttribute(
+      "src",
+      "https://seeklogo.com/images/G/google-material-design-check-logo-B26F6F7B81-seeklogo.com.png"
+    );
+    img.setAttribute("width", "100%");
+    img.setAttribute("height", "100%");
+    check.append(img);
+  });
+
+  document.getElementById("loginsignup").addEventListener("click", () => {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("signin").style.display = "block";
+  });
+
+  document.getElementById("loginAgain").addEventListener("click", () => {
+    document.getElementById("login").style.display = "block";
+    document.getElementById("signin").style.display = "none";
+  });
+
+  document.getElementById("close").addEventListener("click", () => {
+    document.getElementById("signin").style.display = "none";
+  });
+
+  document.getElementById("button1").addEventListener("click", validate);
+  var arr1 = JSON.parse(localStorage.getItem("detail")) || [];
+  function validate() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email1").value;
+    var password = document.getElementById("password1").value;
+    if (name == "" || email == "" || password == "") {
+      alert("please fill all the fields");
+    } else {
+      var obj = {
+        name: name,
+        email: email,
+        password: password,
+      };
+      arr1.push(obj);
+      localStorage.setItem("detail", JSON.stringify(arr1));
+    }
+  }
+  document.getElementById("button").addEventListener("click", validatleogin);
+  function validatleogin() {
+    var flag = true;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var data = JSON.parse(localStorage.getItem("detail"));
+    data.forEach((Element) => {
+      if (Element.email == email && Element.password == password) {
+        document.getElementById("remove").style.display = "none";
+        var link = document.getElementById("link");
+        document.getElementById("login").style.display = "none";
+        var div = document.createElement("div");
+        div.style.width = "40px";
+        div.style.height = "40px";
+        div.style.marginTop = "10px";
+        div.style.borderRadius = "20px";
+        var img = document.createElement("img");
+        img.src =
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Ei-user.svg/1200px-Ei-user.svg.png";
+        img.style.width = "100%";
+        img.style.height = "100%";
+        let profname = document.createElement("p");
+        profname.innerText = Element.name;
+        div.append(img, profname);
+        link.append(div);
+        var h5 = document.createElement("h4");
+        h5.addEventListener("click", load);
+        h5.innerText = "Log Out";
+        h5.style.margin = "18px 1px";
+        h5.style.color = "white";
+        h5.style.cursor = "pointer";
+        link.append(h5);
+        flag = false;
+      }
+    });
+    if (flag) {
+      alert("Invald Username or Password");
+    }
+  }
+  function load() {
+    window.location.reload();
+  }
+
+  window.ondblclick = function () {
+    myFunction_1();
+  };
+  function myFunction_1() {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("signin").style.display = "none";
+  }
+  function myfunction(name) {
+    localStorage.setItem("cityName", JSON.stringify(name));
+    window.location.href = "city.html";
+  }
+</script>
+<script
+  src="https://kit.fontawesome.com/01d90ed8c9.js"
+  crossorigin="anonymous"
+></script>
